@@ -1,0 +1,5 @@
+Stage,Available Stalls,Example Booked Stalls,Remaining Options
+Initial State,38,None,1-38 (38 total)
+After 1st Booking,37,Stall 15,1-38 except 15 (37 total)
+After 2nd Booking,36,"Stalls 7, 15","1-38 except 7,15 (36 total)"
+After 3rd Booking,35,"Stalls 7, 15, 23","1-38 except 7,15,23 (35 total)"

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BTSA Enterprises - Auto Stall Booking System</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <header class="header py-16">
+      <div class="container flex flex-col items-center gap-8">
+        <h1>BTSA Enterprises</h1>
+        <h2 class="subtitle" style="color: var(--color-text-secondary);">
+          Auto Stall Booking System
+        </h2>
+      </div>
+    </header>
+
+    <main class="container py-16">
+      <!-- Booking Form Section -->
+      <section class="card mb-8">
+        <div class="card__header">
+          <h3>Book a Stall</h3>
+        </div>
+        <div class="card__body">
+          <form id="bookingForm" class="flex flex-col gap-16">
+            <div class="form-group">
+              <label for="companyInput" class="form-label">Company Name</label>
+              <input
+                type="text"
+                id="companyInput"
+                class="form-control"
+                placeholder="Enter company name"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="stallSelect" class="form-label">Select Stall</label>
+              <select id="stallSelect" class="form-control" required></select>
+            </div>
+            <button type="submit" id="bookBtn" class="btn btn--primary">
+              Book Stall
+            </button>
+          </form>
+        </div>
+      </section>
+
+      <!-- Alert Area -->
+      <div id="alertBox" class="my-8"></div>
+
+      <!-- Current Bookings Table -->
+      <section class="card">
+        <div class="card__header">
+          <h3>Current Bookings</h3>
+        </div>
+        <div class="card__body">
+          <div class="table-wrapper">
+            <table id="bookingTable" class="booking-table">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Company Name</th>
+                  <th>Stall #</th>
+                  <th>Timestamp</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer py-16">
+      <div class="container">
+        <p style="color: var(--color-text-secondary);">
+          © 2025 BTSA Enterprises. All rights reserved.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
